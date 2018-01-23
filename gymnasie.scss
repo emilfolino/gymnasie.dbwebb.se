@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+@import "sass/utilities/_all";
+@import "sass/base/_all";
+@import "sass/elements/_all";
+@import "sass/components/_all";
+@import "sass/grid/_all";
+@import "sass/layout/_all";
+
+
+.intro {
+    padding: 16rem 0;
+}
+
+.intro::after {
+    content: "";
+    background: url("img/screen.png");
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(-2deg) scale(1.4);
+}
+
+
+.mega-title {
+    font-size: 5rem;
+}
+
+.footer-link img {
+    vertical-align: middle;
+}
+
+.footer-link a {
+    font-size: 3rem;
+}
