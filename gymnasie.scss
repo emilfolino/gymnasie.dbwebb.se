@@ -1,5 +1,13 @@
 @charset "utf-8";
 
+// 1. Import the initial variables
+@import "sass/utilities/initial-variables";
+@import "sass/utilities/functions";
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:300|Source+Sans+Pro');
+
+$family-primary: 'Source Sans Pro', serif;
+
 @import "sass/utilities/_all";
 @import "sass/base/_all";
 @import "sass/elements/_all";
@@ -7,24 +15,26 @@
 @import "sass/grid/_all";
 @import "sass/layout/_all";
 
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 100;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+.navbar-brand img {
+    margin-right: 0.6rem;
+}
 
 .intro {
     padding: 16rem 0;
+    overflow: hidden;
 }
-
-.intro::after {
-    content: "";
-    background: url("img/screen.png");
-    opacity: 0.1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-    transform: rotate(-2deg) scale(1.4);
-}
-
 
 .mega-title {
     font-size: 5rem;
