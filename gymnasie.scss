@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:300|Source+Sans+Pro');
 
 $family-primary: 'Source Sans Pro', serif;
+$family-special: 'Oswald', serif;
 
 @import "sass/utilities/_all";
 @import "sass/base/_all";
@@ -24,7 +25,8 @@ $family-primary: 'Source Sans Pro', serif;
 }
 
 .navbar-brand {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    font-family: $family-special;
 }
 
 .navbar-brand img {
@@ -32,12 +34,27 @@ $family-primary: 'Source Sans Pro', serif;
 }
 
 .intro {
-    padding: 16rem 0;
+    padding: 6rem 0;
     overflow: hidden;
 }
 
 .mega-title {
-    font-size: 5rem;
+    font-size: 3rem;
+    font-family: $family-special;
+}
+
+@media (min-width: 667px) {
+    .mega-title {
+        font-size: 5rem;
+    }
+
+    .intro {
+        padding: 16rem 0;
+    }
+}
+
+section:first-of-type {
+    margin-top: 3.25rem;
 }
 
 footer {
